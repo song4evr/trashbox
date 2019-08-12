@@ -1,0 +1,58 @@
+###[ Ethernet ]### 
+  dst       = 06:ce:53:72:45:ae
+  src       = 06:f7:25:58:cf:e0
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 102
+     id        = 0
+     flags     = 
+     frag      = 0
+     ttl       = 255
+     proto     = udp
+     chksum    = 0x1b12
+     src       = 172.31.27.243
+     dst       = 172.31.44.67
+     \options   \
+###[ UDP ]### 
+        sport     = 65529
+        dport     = 4789
+        len       = 82
+        chksum    = 0x0
+###[ VXLAN ]### 
+           flags     = Instance
+           reserved1 = 0
+           vni       = 0xd903
+           reserved2 = 0x0
+###[ Ethernet ]### 
+              dst       = 0e:96:d8:45:71:32
+              src       = 0e:6c:e3:f2:23:b8
+              type      = IPv4
+###[ IP ]### 
+                 version   = 4
+                 ihl       = 5
+                 tos       = 0x0
+                 len       = 52
+                 id        = 18450
+                 flags     = DF
+                 frag      = 0
+                 ttl       = 64
+                 proto     = tcp
+                 chksum    = 0x63ca
+                 src       = 172.31.26.182
+                 dst       = 172.31.27.243
+                 \options   \
+###[ TCP ]### 
+                    sport     = 56096
+                    dport     = mysql
+                    seq       = 890363005
+                    ack       = 3181681304
+                    dataofs   = 8
+                    reserved  = 0
+                    flags     = A
+                    window    = 664
+                    chksum    = 0xb640
+                    urgptr    = 0
+                    options   = [('NOP', None), ('NOP', None), ('Timestamp', (251529731, 104054257))]
